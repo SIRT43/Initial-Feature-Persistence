@@ -1,0 +1,19 @@
+{
+  "name": "com.43gamestudio.initialfeaturepersistence",
+  "version": "1.0.0",
+  "displayName": "Initial Feature - Persistence",
+  "description": "\u57fa\u4e8e Initial Feature - Json \u7684\u6301\u4e45\u5316\u5de5\u5177\u3002",
+  "keywords": [
+    "Initial",
+    "Feature",
+    "Persistence"
+  ],
+  "author": {
+    "name": "43GAME Studio",
+    "email": "utsirt43@163.com"
+  },
+  "unity": "2019.1",
+  "dependencies": {
+    "com.43gamestudio.initialfeaturejson": "1.0.0"
+  }
+}

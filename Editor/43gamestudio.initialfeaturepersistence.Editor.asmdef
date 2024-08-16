@@ -1,0 +1,17 @@
+{
+    "name": "43GAMEStudio.InitialFeature.Persistence.Editor",
+    "rootNamespace": "FTGAMEStudio.InitialSolution",
+    "references": [
+        "GUID:a7221d2f44d1fdd4f9adfbd14b1947d7",
+        "GUID:5f4eb5fd6d7b8d54888393a402f48526"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
