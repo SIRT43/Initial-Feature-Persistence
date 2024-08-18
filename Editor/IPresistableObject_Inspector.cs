@@ -18,16 +18,16 @@ namespace FTGAMEStudio.InitialSolution.Persistence
 
             if (GUILayout.Button("读取"))
             {
-                if (EditorUtility.DisplayDialog("读取选定文件？", $"{target.FileLocation.FullName}\n\n您无法撤销文件读取操作。", "确定", "取消")) target.Read();
+                if (EditorUtility.DisplayDialog("读取选定文件？", $"{target.FileLocation.FullPath}\n\n您无法撤销文件读取操作。", "确定", "取消")) target.Read();
             }
 
             if (GUILayout.Button("写入"))
             {
-                if (EditorUtility.DisplayDialog("写入选定文件？", $"{target.FileLocation.FullName}\n\n您无法撤销文件写入操作。", "确定", "取消")) target.Write();
+                if (EditorUtility.DisplayDialog("写入选定文件？", $"{target.FileLocation.FullPath}\n\n您无法撤销文件写入操作。", "确定", "取消")) target.Write();
             }
             if (GUILayout.Button("删除"))
             {
-                if (EditorUtility.DisplayDialog("删除选定文件？", $"{target.FileLocation.FullName}\n\n您无法撤销文件删除操作。", "确定", "取消")) target.Delete();
+                if (EditorUtility.DisplayDialog("删除选定文件？", $"{target.FileLocation.FullPath}\n\n您无法撤销文件删除操作。", "确定", "取消")) target.Delete();
             }
 
             GUILayout.EndHorizontal();

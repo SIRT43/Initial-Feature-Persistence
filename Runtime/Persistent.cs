@@ -1,14 +1,13 @@
 using FTGAMEStudio.InitialFramework.IO;
 using System;
-using System.Threading.Tasks;
 using System.Timers;
 
 namespace FTGAMEStudio.InitialSolution.Persistence
 {
     [Serializable]
-    public abstract class Persistent : IPersistent, IPersistentAsync, IFileReference
+    public abstract class Persistent : IPersistent, IFileReference
     {
-        public abstract FilePath FileLocation { get; }
+        public abstract UnityFile FileLocation { get; }
 
         private readonly Timer writer;
         public readonly bool autoWrite = false;
@@ -30,19 +29,11 @@ namespace FTGAMEStudio.InitialSolution.Persistence
         public virtual bool Read() =>
             IFJson.FromFile(FileLocation, this);
 
-        public virtual async Task<bool> ReadAsync() =>
-            await IFJson.FromFileAsync(FileLocation, this);
-
-        public virtual bool Write() =>
+        public virtual void Write() =>
             IFJson.ToFile(FileLocation, this);
 
-        public virtual async Task<bool> WriteAsync() =>
-            await IFJson.ToFileAsync(FileLocation, this);
-
-
         public virtual bool Delete() =>
-            IFFile.Delete(FileLocation);
-
+            FileLocation.Delete();
 
         protected Persistent() { }
 

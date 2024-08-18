@@ -2,7 +2,7 @@
   "name": "com.43gamestudio.initialfeaturepersistence",
   "version": "1.0.0",
   "displayName": "Initial Feature - Persistence",
-  "description": "\u57fa\u4e8e Initial Feature - Json \u7684\u6301\u4e45\u5316\u5de5\u5177\u3002",
+  "description": "\u57fa\u4e8e Initial Feature - Json \u7684\u6301\u4e45\u5316\u5bf9\u8c61\u5de5\u5177\u3002\n\n\u4ece Persistent \u4ee5\u6301\u4e45\u5316 C# \u5bf9\u8c61\u3002\n\u4ece PersistableObject \u4ee5\u6301\u4e45\u5316 ScriptableObject\u3002\n\u4ece PersistableBehaviour \u4ee5\u6301\u4e45\u5316 MonoBehaviour\u3002",
   "keywords": [
     "Initial",
     "Feature",
