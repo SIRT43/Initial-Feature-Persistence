@@ -5,7 +5,7 @@ namespace FTGAMEStudio.InitialSolution.Persistence
     public interface IPersistableObject : IPersistent, IFileReference
     {
 #if UNITY_EDITOR
-        public void DisplayInExplorer();
+        void DisplayInExplorer();
 #endif
     }
 }
