@@ -1,9 +1,9 @@
 {
-    "name": "43GAMEStudio.InitialFeature.Persistence.Editor",
+    "name": "43GAMEStudio.Persistence.Runtime",
     "rootNamespace": "FTGAMEStudio.InitialSolution",
     "references": [
-        "GUID:a7221d2f44d1fdd4f9adfbd14b1947d7",
-        "GUID:5f4eb5fd6d7b8d54888393a402f48526"
+        "GUID:5f4eb5fd6d7b8d54888393a402f48526",
+        "GUID:c402c07480ed4b346a11baee370ef8f5"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
