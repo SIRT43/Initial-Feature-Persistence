@@ -2,7 +2,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace FTGAMEStudio.InitialSolution.Persistence
+namespace InitialSolution.Persistence.Persisting
 {
     public abstract class IPersistableObject_Inspector : Editor
     {
@@ -10,7 +10,7 @@ namespace FTGAMEStudio.InitialSolution.Persistence
         {
             base.OnInspectorGUI();
 
-            IPersistableObject target = this.target as IPersistableObject;
+            IPersistable target = this.target as IPersistable;
 
             EditorGUILayout.Space();
 

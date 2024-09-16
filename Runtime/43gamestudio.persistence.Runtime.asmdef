@@ -1,9 +1,8 @@
 {
     "name": "43GAMEStudio.Persistence.Runtime",
-    "rootNamespace": "FTGAMEStudio.InitialSolution",
+    "rootNamespace": "InitialSolution.Persistence",
     "references": [
-        "GUID:5f4eb5fd6d7b8d54888393a402f48526",
-        "GUID:c402c07480ed4b346a11baee370ef8f5"
+        "GUID:5f4eb5fd6d7b8d54888393a402f48526"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

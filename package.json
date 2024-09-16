@@ -2,7 +2,7 @@
   "name": "com.43gamestudio.persistence",
   "version": "1.0.0",
   "displayName": "Persistence",
-  "description": "Persistence \u662f\u57fa\u4e8e Json (Initial Solution) \u7528\u4e8e\u5c06 C# \u4e0e Unity \u5bf9\u8c61\u6301\u4e45\u5316\u7684\u5de5\u5177\u3002",
+  "description": "Persistence \u662f\u7528\u4e8e\u5c06 C# \u4e0e Unity \u5bf9\u8c61\u6301\u4e45\u5316\u7684\u5de5\u5177\u3002",
   "keywords": [
     "Initial",
     "Solution",
@@ -15,6 +15,6 @@
   "unity": "2019.1",
   "dependencies": {
     "com.unity.modules.jsonserialize": "1.0.0",
-    "com.43gamestudio.json": "1.0.0"
+    "com.43gamestudio.initialframework": "1.0.0"
   }
 }
