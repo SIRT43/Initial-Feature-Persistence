@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Text;
-using UnityEngine;
 
 namespace InitialSolution.Persistence.Serialization
 {
@@ -21,7 +20,6 @@ namespace InitialSolution.Persistence.Serialization
             { typeof(string), "string" },
         };
 
-
         public static bool GetTypeName(Type type, out string name)
         {
             if (supportedType.TryGetValue(type, out string value))
@@ -33,6 +31,7 @@ namespace InitialSolution.Persistence.Serialization
             name = null;
             return false;
         }
+
 
 
         public static string BuildStatement(string type, string name, string value) => $"{type} {name} = {value};";
@@ -49,26 +48,18 @@ namespace InitialSolution.Persistence.Serialization
         }
 
 
-
-        public static bool IsSerializableField(MemberInfo memberInfo) =>
-            !memberInfo.IsDefined(typeof(NonSerializedAttribute), true) ||
-            memberInfo.IsDefined(typeof(SerializeField), true);
-        public static bool IsSerializableType(Type type) =>
-            type.IsDefined(typeof(SerializableAttribute), true);
-
-
         public static bool Serialization(object obj, out string tdl)
         {
             tdl = null;
             Type type = obj.GetType();
 
-            if (!IsSerializableType(type)) return false;
+            if (!type.IsSerableType()) return false;
 
             StringBuilder builder = new();
 
             foreach (FieldInfo variable in type.GetFields(BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic))
             {
-                if (!IsSerializableField(variable)) continue;
+                if (!variable.IsSerableField()) continue;
 
                 builder.Append(BuildStatement(variable, obj) + "\n");
             }
