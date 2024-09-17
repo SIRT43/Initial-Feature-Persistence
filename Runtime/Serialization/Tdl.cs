@@ -50,18 +50,12 @@ namespace InitialSolution.Persistence.Serialization
 
         public static bool Serialization(object obj, out string tdl)
         {
-            tdl = null;
-            Type type = obj.GetType();
-
-            if (!type.IsSerableType()) return false;
-
             StringBuilder builder = new();
 
-            foreach (FieldInfo variable in type.GetFields(BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic))
+            foreach (FieldInfo variable in SerUtils.GetSerableFields(obj))
             {
-                if (!variable.IsSerableField()) continue;
-
-                builder.Append(BuildStatement(variable, obj) + "\n");
+                string statement = BuildStatement(variable, obj);
+                if (!string.IsNullOrEmpty(statement)) builder.Append(statement + "\n");
             }
 
             tdl = builder.ToString();
