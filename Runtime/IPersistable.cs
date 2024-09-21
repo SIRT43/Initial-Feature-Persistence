@@ -1,6 +1,6 @@
 using InitialFramework.IO;
 
-namespace InitialSolution.Persistence.Persisting
+namespace InitialSolution.Persistence
 {
     public interface IPersistable : IFileReference
     {

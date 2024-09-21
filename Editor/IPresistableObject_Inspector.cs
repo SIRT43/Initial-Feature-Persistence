@@ -2,7 +2,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace InitialSolution.Persistence.Persisting
+namespace InitialSolution.Persistence
 {
     public abstract class IPersistableObject_Inspector : Editor
     {

@@ -1,8 +1,7 @@
 using InitialFramework.IO;
-using InitialSolution.Persistence.Serialization;
 using UnityEngine;
 
-namespace InitialSolution.Persistence.Persisting
+namespace InitialSolution.Persistence
 {
     /// <summary>  
     /// 可持久化行为。

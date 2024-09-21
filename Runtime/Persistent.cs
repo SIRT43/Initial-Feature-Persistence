@@ -1,9 +1,8 @@
 using InitialFramework.IO;
-using InitialSolution.Persistence.Serialization;
 using System;
 using UnityEngine;
 
-namespace InitialSolution.Persistence.Persisting
+namespace InitialSolution.Persistence
 {
     [Serializable]
     public abstract class Persistent : IPersistable, IFileReference

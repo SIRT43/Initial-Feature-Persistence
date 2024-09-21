@@ -2,7 +2,7 @@ using InitialFramework.IO;
 using System;
 using UnityEngine;
 
-namespace InitialSolution.Persistence.Serialization
+namespace InitialSolution.Persistence
 {
     public static class Json
     {
